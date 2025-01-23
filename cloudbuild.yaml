@@ -4,6 +4,6 @@ steps:
 options:
   env:
     - DOCKER_BUILDKIT=1
-  machineType: 'e2-highcpu-32'
+  machineType: 'e2_highcpu_32'
 images:
   - "gcr.io/paper-tools/superset"
