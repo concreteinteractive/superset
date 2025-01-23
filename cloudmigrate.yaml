@@ -1,0 +1,8 @@
+steps:
+  - name: "gcr.io/cloud-builders/docker"
+    args: ["build", "--build-arg", "DOCKER_BUILDKIT=1", "--tag", "gcr.io/paper-tools/superset", "."]
+options:
+  env:
+    - DOCKER_BUILDKIT=1
+images:
+  - "gcr.io/paper-tools/superset"
